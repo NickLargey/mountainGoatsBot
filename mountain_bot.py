@@ -1,19 +1,13 @@
-import random
+import time
 
+from api import getAPI
+from mg_bot_gen import gen_lyrics
 
-def get_lyrics():
-	chunk = []
-	i = 0
-	while i <= 3:
-		with open('mg_lyrics.txt','r') as f:
-			line = f.read()
-			line = line.split('\n')
+API = getAPI()
+GENERATOR = gen_lyrics()
 
-			new_line = random.choice(line)
-			chunk.append(new_line)
-			
-			i += 1
-			
-	print('\n'.join(chunk))
+print(GENERATOR)	
+API.update_status(GENERATOR)
+time.sleep(15)
 
-get_lyrics()
+print('Done!')
