@@ -8,6 +8,5 @@ GENERATOR = gen_lyrics()
 
 print(GENERATOR)	
 API.update_status(GENERATOR)
-time.sleep(15)
 
 print('Done!')
