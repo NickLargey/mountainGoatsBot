@@ -1,2 +1,2 @@
 # mountainGoatsBot
-Random Mountain Goats lyric generator twitter bot 
+Markov Chain Random Mountain Goats Lyric Generator Twitter Bot 
