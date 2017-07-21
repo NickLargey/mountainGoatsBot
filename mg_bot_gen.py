@@ -2,7 +2,7 @@
 import random
 from markov_bot import runBot
 
-lines = 2
+lines = 4
 OUTPUT = runBot()
 
 def outText():
